@@ -11,7 +11,7 @@ The simulation can be used to debug your Linux client intended for communicating
 
 #### Connections: ####
 
-| Discovery | GPIO     |
+| Board Pin | SBC Pin  |
 | :-------: | :------: |
 |    GND    | GND      |
 |    PA4+GND| CS+GND   |
@@ -26,16 +26,16 @@ Options: MSB, CPOL = 0, CPHA = 1
 
 Package structure (Master-Slave):
 
-   Command|     Pause      |Command Data|     Pause      |Reading ADC Data (data shift)
-   -------|----------------|------------|----------------|-------------------------------
-   1 byte |(?) microseconds|   2 bytes  |(?) microseconds| 0-65536 bytes
+| Command|      Pause       |Command Data|      Pause      |Reading ADC Data (data shift) |
+|--------|------------------|------------|-----------------|------------------------------|
+| 1 byte |(50-500) microsec.|  2 bytes   |(0-100) microsec.|       0-65536 bytes          |
 
 
 Package structure (Slave-Master):
 
-  Garbage |     Pause      |Command Reply|     Pause      |   ADC Data
-  --------|----------------|-------------|----------------|---------------------
-   1 byte |(?) microseconds|   2 bytes   |(?) microseconds| 0-65536 bytes (LSB?)
+|Garbage |      Pause       |Command Reply|      Pause      |   ADC Data          |
+|--------|------------------|-------------|-----------------|---------------------|
+| 1 byte |(50-500) microsec.|   2 bytes   |(0-100) microsec.| 0-65536 bytes (LSB?)|
 
 
 Commands:
