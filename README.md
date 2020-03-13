@@ -11,13 +11,13 @@ The simulation can be used to debug your Linux client intended for communicating
 
 #### Connections: ####
 
-| Board Pin | SBC Pin  |
-| :-------: | :------: |
-|    GND    | GND      |
-|    PA4+GND| CS+GND   |
-|    PA5    | CLK      |
-|    PA7    | MOSI     |
-|    PA6    | MISO     |
+| Discovery Pin| Computer Pin|
+| :----------: | :---------: |
+|    GND       |    GND      |
+|    PA4+GND   |    CS+GND   |
+|    PA5       |    CLK      |
+|    PA7       |    MOSI     |
+|    PA6       |    MISO     |
 
 
 #### Application stuff: ####
