@@ -10,14 +10,14 @@ static uint32_t adc_rates [4] = {10000, 20000, 50000, 100000};
 uint16_t adc_cmd0_callback(void)
 {
     // process it....
-    return 0; // reply to Orange
+    return 0; // reply to SBC
 }
 
 //start adc
 uint16_t adc_cmd1_callback(void)
 {
     // process it....
-    return 1; // reply to Orange
+    return 1; // reply to SBC
 }
 
 //-------------------------------
@@ -25,7 +25,7 @@ uint16_t adc_cmd1_callback(void)
 uint16_t adc_cmd2_callback(void)
 {
     // process it....
-    return 2; // reply to Orange
+    return 2; // reply to SBC
 }
 uint16_t channel_number = 0;
 void recalc_shift_size(void);
@@ -39,7 +39,7 @@ void adc_cmd2_data_callback(uint16_t data) // channel number
 uint16_t adc_cmd3_callback(void)
 {
     // process it....
-    return 3;	// reply to Orange
+    return 3;	// reply to SBC
 }
 uint16_t input_range_code = 0;
 void adc_cmd3_data_callback(uint16_t data) // input range
@@ -50,7 +50,7 @@ void adc_cmd3_data_callback(uint16_t data) // input range
 // adc sample size
 uint16_t adc_cmd4_callback(void)
 {
-    return 4; // reply to Orange
+    return 4; // reply to SBC
 }
 uint16_t sample_size = 0;
 void adc_cmd4_data_callback(uint16_t data) // adc sample size
@@ -62,7 +62,7 @@ void adc_cmd4_data_callback(uint16_t data) // adc sample size
 // adc sampling rate
 uint16_t adc_cmd5_callback(void)
 {
-    return 5; // reply to Orange
+    return 5; // reply to SBC
 }
 uint16_t sampling_rate_code = 0;
 void adc_cmd5_data_callback(uint16_t data) // adc sampling rate

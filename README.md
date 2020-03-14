@@ -3,6 +3,7 @@
 
 This is a software of imaginary ADC that generates the "Saw" signal and delivers it to a client computer through the SPI module.
 The simulation can be used to debug your Linux client intended for communicating with a custom SPI-featured ADC board built on the basis of the STM32 family of microcontrollers. 
+Look at [spi-adc-client](https://github.com/wiluite/spi-adc-client), a data acquisition sample client.
 
 #### Hardware: ####
 
