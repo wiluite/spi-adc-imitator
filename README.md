@@ -54,3 +54,8 @@ Receive ADC Data     |    6        |   0xFFFF   |0 - data not ready, or "value" 
 \* The size of the “ADC Data” field shall be a multiple of the value equal to the product of “Channel Number” and “Sample Size”. The condition must be observed so that the received data of the last measurement have values for all channels used. Also, the size of this field should be closer to the value of 65535.
 
 
+#### Leds status: ####
+Red - The functioning of the state machine crashed.
+Orange - Simulation data generation lags behind its collection.
+Blue - Exchange is unstable.
+Green - Everything is alright.
